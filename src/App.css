@@ -1,0 +1,40 @@
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.popular-movies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 1rem 2rem;
+}
+
+.popular-movies img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.popular-movies h5 {
+    font-size: 1rem;
+}
+
+.filter-container button {
+    margin-right: 2rem;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background: #fff;
+    color: rgb(65, 98, 168);
+    border-radius: 1rem;
+    border: 2px solid rgb(65, 98, 168);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-container button.active {
+    color: #fff;
+    background-color: rgb(65, 98, 168);
+}
